@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>New York Times Search</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>New York Times Search</h1>
+        </div>
+        <div class="row">
+            <h3> <span class="glyphicon glyphicon-list"> </span> Search Parameters </h3>
+            <form>
+                <div class="form-group">
+                    <label for="search">Search Term:</label>
+                    <input type="search" class="form-control" id="exampleInputsearch">
+                </div>
+                <div class="form-group">
+                    <label for="numberOfRecords">Number of Records to Retrieve:</label>
+                    <input type="records" class="form-control" id="numberOfRecords">
+                </div>
+                <div class="form-group">
+                    <label for="startYear">Start Year (Optional):</label>
+                    <input type="yearStart" class="form-control" id="startYear">
+                </div>
+                <div class="form-group">
+                    <label for="endYear">End Year (Optional):</label>
+                    <input type="yearEnd" class="form-control" id="endYear">
+                </div>
+                <button type="submit" id="search-button" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"> Submit </span></button>
+                <button type="clear" class="btn btn-default"><span class="glyphicon glyphicon-refresh" aria-hidden="true"> Clear</span></button>
+            </form>
+            <br>
+            <h3><span class="glyphicon glyphicon-list-alt" aria-hidden="true"> </span> Top Articles </h3>
+            <form>
+                <label for="exampleTextarea"></label>
+                <textarea class="form-control" id="exampleTextarea" rows="2">Example Result 1</textarea>
+                <label for="exampleTextarea"></label>
+                <textarea class="form-control" id="exampleTextarea" rows="2">Example Result 2</textarea>
+                <label for="exampleTextarea"></label>
+                <textarea class="form-control" id="exampleTextarea" rows="2">Example Result 3</textarea>
+            </form>
+
+</html>
+<!-- jQuery JS -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- Logic.js -->
+<script src="logic.js"></script>
+</body>
+
+</html>
